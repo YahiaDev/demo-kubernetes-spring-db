@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: springbootapp
+  name: springbootapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springbootapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: springbootapp
+    spec:
+      containers:
+      - image: yahiadev/kubernetes-spring-postgres-demo:0.13
+        name: kubernetes-spring-postgres-demo
+        resources: {}
+status: {}
