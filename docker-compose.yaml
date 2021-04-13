@@ -18,7 +18,7 @@ services:
       - 5433
     restart: unless-stopped
   springbootapp:
-    image: yahiadev/kubernetes-spring-postgres-demo:0.8
+    image: yahiadev/kubernetes-spring-postgres-demo:0.16
     network_mode: bridge
     container_name: springbootapp
     expose:
